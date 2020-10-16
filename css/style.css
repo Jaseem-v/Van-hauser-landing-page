@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0; 
+    font-family: sans-serif;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.left-part, .right-part{
+    position: relative;
+    flex-basis: 50%;
+    height: 100vh;
+}
+
+/* -------left-part----------- */
+
+.left-part{
+    padding:0 2% 0 5%;
+}
+
+
+
+.logo{
+    width: 77px;
+    padding-top: 3rem;
+}
+
+.left-part h1{
+    padding-top: 8rem;
+    font-size: 62px;
+    font-weight: 800;
+    color: #05a35f;
+}
+.left-part p{
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: #777;
+}
+.left-part button{
+    margin-top: 2rem;
+    background: #05a35f;
+    width: 200px;
+    border: none;
+    outline: none;
+    color: #fff;
+    box-shadow: 0px 10px 10px 1px rgba(219, 219,219, 0.5);
+    font-size: 12px;
+    padding: 25px 0;
+    cursor: pointer;
+}
+
+
+/* -x------left-part---------x-- */
+
+
+
+
+
+
+/* -----right-part----------- */
+
+.right-part .img-part{
+    height: 60%;
+    display: flex;
+    width: 100%;
+}
+.right-part .img-part img{
+    width: 100%;
+    height: auto;
+
+}
+
+.right-content-part{
+    flex-basis: 50%;
+    padding: 3rem 2rem 1rem 2rem ;
+    background: #05a35f;
+    color: #fff;
+    height: 40%;
+}
+
+.right-content-part h2{
+    font-size: 26px;
+    font-weight: 100;
+}
+.right-content-part p{
+    color: #bfffdd;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 1rem 0;
+}
+hr{
+    width: 30%;
+    margin-top: 1rem;
+    background: #b5e3cf;
+}
+
+.next-prev{
+    width: 120px;
+    margin: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.next-prev img{
+    width: 45px;
+    cursor: pointer;
+}
+
+.vertical-line{
+    width: 2px;
+    height: 30px;
+    background: #b5e3cf;
+}
+
+/* -x----right-part----------x- */
+
+
+/* ------media-queries---------- */
+
+@media only screen and (max-width:1000px){
+    .left-part h1{
+        font-size: 50px;
+    }
+}
+
+
+@media only screen and (max-width:800px){
+    .container{
+        flex-wrap: wrap;
+    }
+
+    .left-part , .right-part{
+        flex-basis: 100%;
+        height: auto;
+    }
+    .left-part{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .logo{
+        padding: 3rem auto;
+    }
+
+    .left-part h1{
+        font-size: 34px;
+        padding-top: 3rem;
+        line-height: 38px;
+    }
+
+    .left-part button{
+        width: 167px;
+        padding: 18px 0;
+    }
+
+    .right-part{
+        padding-top:2rem;
+    }
+    
+    .right-part .img-part img{
+        height: auto;  
+    }
+
+    .right-content-part{
+        height: auto;
+    }
+
+    .right-part .img-part{
+        height: auto;
+    }
+}
+
+/* -x---media-queries-------------- */
